@@ -70,7 +70,7 @@ def LucasKanade(im1,im2,POI,W, kernel):
         A = buildA(im2,      POI[i][0][1], POI[i][0][0], kernel)
         B = buildB(im2, im1, POI[i][0][1], POI[i][0][0], kernel)
 #%% solve for v
-        Vpt = np.linalg.inv(A.T @ W**2 @ A) @ A.T @ W**2 @ B
+        Vpt = np.linalg.inv(A.T.dot(W**2).dot(A)).dot(A.T).dot(W**2).dot(B)
         V[i,0] = Vpt[0]
         V[i,1] = Vpt[1]
 

@@ -25,7 +25,7 @@ Python implementation of optical flow estimation using only the Scipy stack for:
 
 Install
 =======
-Requires Python >= 3.5::
+Requires Python == 2.7::
 
     pip install -e .
 

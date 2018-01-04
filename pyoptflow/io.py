@@ -2,7 +2,7 @@
 from pathlib import Path
 
 def getimgfiles(stem):
-    stem = Path(stem).expanduser()
+    stem = Path(stem)
     path = stem.parent
     name = stem.name
     exts = ['.ppm','.bmp','.png','.jpg']
